@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digit Prediction</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"
+      integrity="sha512-WIklPM6qPCIp6d3fSSr90j+1unQHUOoWDS4sdTiR8gxUTnyZ8S2Mr8e10sKKJ/bhJgpAa/qG068RDkg6fIlNFA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/gh/temchik76/p5js-grid@2.0.2/dist/grid.js"></script>
+    <script src="static\sketch.js" defer></script>
+  </head>
+
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto 'chart';
+    }
+    .grid-container {
+      grid-template-columns: auto auto;
+    }
+
+    #myChart {
+      grid-column: ;
+      grid-area: 1/2;
+    }
+  </style>
+  <body>
+    <h1>simple digit prediction app</h1>
+    <div class="grid-container">
+      <div id="canvasContainer" class="canvas"></div>
+      <button class="clear-btn" onclick="clearGrid() ">clear canvas</button>
+      <canvas id="myChart" class="chart"></canvas>
+    </div>
+  </body>
+</html>
