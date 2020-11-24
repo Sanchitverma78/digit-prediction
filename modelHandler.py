@@ -1,6 +1,5 @@
 from tensorflow import keras
 import numpy as np
-import matplotlib.pyplot as plt
 model= keras.models.load_model('./model')
 print('---------------[INFO]modelloaded---------------')
 
